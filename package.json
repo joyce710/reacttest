@@ -4,9 +4,13 @@
   "private": true,
   "homepage": "https://joyce710.github.io/reacttest/",
   "dependencies": {
+    "@material-ui/core": "^4.3.1",
+    "@material-ui/icons": "^4.2.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "react-vis": "^1.11.7",
+    "stylus": "^0.54.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -14,7 +18,8 @@
     "deploy": "gh-pages -d build --git git",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "css": "stylus -w src/stylus/index.styl -o src"
   },
   "eslintConfig": {
     "extends": "react-app"
