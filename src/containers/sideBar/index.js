@@ -9,7 +9,7 @@ import { NavLink } from 'react-router-dom';
 import * as Icons from '@material-ui/icons';
 import {connect} from 'react-redux';
 import SideBarAction from '../../redux/actions/sideBarAction.js';
-import sideBarReducer from '../../containers/sideBar/index.js';
+// import sideBarReducer from '../../redux/reducer/sideBarReducer.js';
 
 class DynamicSideBar extends React.Component
 {
