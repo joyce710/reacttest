@@ -111,4 +111,4 @@ const mapStateToProps = (state) =>{
     }
  }
 
- export  default  connect(mapStateToProps,mapDispatchtoProps)(Header);
+ export default connect(mapStateToProps,mapDispatchtoProps)(Header);

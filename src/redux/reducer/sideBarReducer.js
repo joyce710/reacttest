@@ -16,7 +16,7 @@ import Action from '../actions/actionID.js';
 
 
 const initState = {
-    data : Data.navItems,
+    data : Data.sideBarItems,
     value: 0,
     event: null
 }

@@ -20,19 +20,19 @@ class DynamicSideBar extends React.Component
         this.props.resetValue();
     };
     renderSideItem(item){
+        console.log("rendersidetiem");
         const MyIcon =Icons[item.icon];
         if(item.subNavItems) {
             let listItems = this.loopSubItems(item.subNavItems);
-            const expand = this.props.state[item.label] === undefined ? window.location.hash.indexOf(item.url) > -1
+            const expand = this.props.state[item.label] === undefined ?
+                window.location.hash.indexOf(item.url) > -1
                 : this.props.state[item.label];
 
             this.props.setState(item.label, expand);
 
             return (
                 <div key={item.label}>
-                    <ListItem button onClick={() => {
-                        this.openSubList(item.label, expand)
-                    }}>
+                    <ListItem button onClick={() => {this.openSubList(item.label, expand)}}>
                         <ListItemIcon>
                             <MyIcon/>
                         </ListItemIcon>
@@ -52,6 +52,7 @@ class DynamicSideBar extends React.Component
         else{
             return (
                 <div key={item.label}>
+                    {console.log(item)}
                     <NavLink exact = {item.url === '/'} to={item.url} activeClassName="on-click">
                         <ListItem button onClick = {this.resetTabView}>
                             {/*//这个value值是什么？reset让value值等于0 控制了什么*/}
@@ -70,11 +71,16 @@ class DynamicSideBar extends React.Component
     listLoop(list)
     {
         let output=[];
+        {console.log("listloop")}
+        {console.log(list)}
         for(let i in list){
             output.push(this.renderSideItem(list[i]));
         }
         return(
-            <div>{output}</div>
+            <div>
+                {output}
+                {console.log(output,'空的')}
+            </div>
         )
     }
     loopSubItems(list)
@@ -104,7 +110,7 @@ const mapStateToProps =(state)=>{
 }
 const mapDispatchtoProps=(dispatch)=>{
     return{
-        showSublist:(oneState)=>{dispatch(SideBarAction.showSublist(oneState))},
+        showSublist:(oneState)=>{dispatch(SideBarAction.ShowSublist(oneState))},
         setState:(oneState,bool)=>{dispatch(SideBarAction.SetState(oneState,bool))}
 
     }

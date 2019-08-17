@@ -10,7 +10,6 @@ class Footer extends React.Component {
     const month = (new Date()).getMonth().toString();
     const day = (new Date()).getDate().toString();
     // const time=new Date(new Date().setHours(0, 0, 0, 0)).getTime();
-    console.log('933333');
     const monthName = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"];
     return (
       <div className = "footer">
