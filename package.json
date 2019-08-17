@@ -1,21 +1,28 @@
 {
-  "name": "myapp1",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://joyce710.github.io/reacttest/",
+  "homepage": "https://tbsse.github.io/my-app",
   "dependencies": {
-    "@material-ui/core": "^4.3.1",
-    "@material-ui/icons": "^4.2.1",
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
+    "css": "^2.2.4",
+    "fg-loadcss": "^2.1.0",
+    "prop-types": "latest",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
+    "react-markdown": "^4.1.0",
+    "react-redux": "^7.0.3",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.1.1",
     "react-vis": "^1.11.7",
+    "redux": "^4.0.1",
+    "redux-devtools": "^3.5.0",
     "stylus": "^0.54.5"
   },
   "scripts": {
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build --git git",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -24,19 +31,14 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
   "devDependencies": {
-    "gh-pages": "^2.1.0"
+    "gh-pages": "^2.0.1",
+    "prop-types": "latest"
   }
 }
