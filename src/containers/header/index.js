@@ -57,7 +57,7 @@ class Header extends React.Component{
                     <Toolbar className = "toolbar">
                         <div>
                             <ListItem button onClick={()=>{this.props.SideBarOpen()}} >
-                                <ListItemIcon><MenuIcon />{111}</ListItemIcon>
+                                <ListItemIcon><MenuIcon /></ListItemIcon>
                             </ListItem>
                         </div>
                         <div className = "home-icon">
@@ -86,7 +86,7 @@ class Header extends React.Component{
                         <Collapse in={this.props.listOpenState} timeout="auto" unmountOnExit>
                             <div className="list">
                                 <List component="div">
-                                    <DynamicSideBar/>5555
+                                    <DynamicSideBar/>
                                 </List>
                             </div>
                         </Collapse>

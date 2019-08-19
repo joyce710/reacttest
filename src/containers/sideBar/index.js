@@ -20,7 +20,6 @@ class DynamicSideBar extends React.Component
         this.props.resetValue();
     };
     renderSideItem(item){
-        console.log("rendersidetiem");
         const MyIcon =Icons[item.icon];
         if(item.subNavItems) {
             let listItems = this.loopSubItems(item.subNavItems);
@@ -38,7 +37,6 @@ class DynamicSideBar extends React.Component
                         </ListItemIcon>
                         <ListItemText inset primary={item.label}/>
                         {expand ? <Icons.ExpandLess/> : <Icons.ExpandMore/>}
-                        {"上面是箭头"}
                     </ListItem>
                     <Divider/>
                     <Collapse in={expand} timeout="auto" unmountOnExit>
@@ -71,15 +69,12 @@ class DynamicSideBar extends React.Component
     listLoop(list)
     {
         let output=[];
-        {console.log("listloop")}
-        {console.log(list)}
         for(let i in list){
             output.push(this.renderSideItem(list[i]));
         }
         return(
             <div>
                 {output}
-                {console.log(output,'空的')}
             </div>
         )
     }
@@ -111,7 +106,8 @@ const mapStateToProps =(state)=>{
 const mapDispatchtoProps=(dispatch)=>{
     return{
         showSublist:(oneState)=>{dispatch(SideBarAction.ShowSublist(oneState))},
-        setState:(oneState,bool)=>{dispatch(SideBarAction.SetState(oneState,bool))}
+        setState:(oneState,bool)=>{dispatch(SideBarAction.SetState(oneState,bool))},
+        resetValue: () => {dispatch(SideBarAction.ResetValue())}
 
     }
 }
