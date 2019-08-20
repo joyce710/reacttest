@@ -12,18 +12,18 @@ import Typography from '@material-ui/core/Typography';
 import MyTemplete  from '../../../templete/index.js';
 import CodeBlock from '../../../CodeBlock.js';
 import ReactMarkdown from 'react-markdown';
-import CardIMG from '../../../../assets/images/uni.jpg';
+import CardIMG from '../../../../assets/images/grandeC.jpg';
 
 const styles = {
   card: {
     width: '100%',
     maxWidth: "400px",
     margin: "auto",
-    marginTop: "50px",
+    marginTop: "20px",
     marginBottom: "50px",
   },
   media: {
-    height: "300px",
+    height: "250px",
   },
 };
 
@@ -39,10 +39,10 @@ function MyInfoCard(props) {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              Sea Urchin
+              Grand Canyon
             </Typography>
             <Typography component="p">
-               In Japan, sea urchin is known as uni (うに), and its roe can retail for as much as ¥40000 ($360) per kg; it is served raw as sashimi or in sushi, with soy sauce and wasabi.
+              The Grand Canyon is perhaps the world’s greatest natural wonder. It offers an innumerable variety of sensations from the sublime vistas at the canyon rim to the subtle charm of the tiny creeks and streams which nourish the backcountry traveler. From the raging rapids of the mighty Colorado River to the stark desert beauty of the Tonto plateau.
             </Typography>
           </CardContent>
         </CardActionArea>

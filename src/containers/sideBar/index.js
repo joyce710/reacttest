@@ -4,7 +4,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Collapse from '@material-ui/core/Collapse';
-import Divider from '@material-ui/core/Divider';
+// import Divider from '@material-ui/core/Divider';
 import { NavLink } from 'react-router-dom';
 import * as Icons from '@material-ui/icons';
 import {connect} from 'react-redux';
@@ -38,7 +38,7 @@ class DynamicSideBar extends React.Component
                         <ListItemText inset primary={item.label}/>
                         {expand ? <Icons.ExpandLess/> : <Icons.ExpandMore/>}
                     </ListItem>
-                    <Divider/>
+                    {/*<Divider/>*/}
                     <Collapse in={expand} timeout="auto" unmountOnExit>
                         <List component="div">
                             {listItems}
@@ -60,7 +60,7 @@ class DynamicSideBar extends React.Component
                             <ListItemText primary={item.label} />
                         </ListItem>
                     </NavLink>
-                    <Divider />
+                    {/*<Divider />*/}
                 </div>
             );
         }

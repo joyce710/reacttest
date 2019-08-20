@@ -129,7 +129,7 @@ iframe {
   flex-direction: column;
 }
 #root {
-  margin-top: 85px;
+  margin-top: 57px;
   display: flex;
   justify-content: center;
 }
@@ -280,7 +280,7 @@ iframe {
   width: 100% !important;
 }
 .templete-appbar {
-  background-color: #808080 !important;
+  background-color: #868686 !important;
   overflow: auto !important;
 }
 .tab-content {
@@ -304,7 +304,7 @@ iframe {
   padding-right: 0px;
 }
 .appbar {
-  background-color: #374a56 !important;
+  background-color: #414242 !important;
 }
 .appbar .toolbar {
   background-color: inherit;
@@ -329,7 +329,7 @@ iframe {
   padding: 0px;
 }
 .list {
-  border-right: 2px solid #87898e;
+  border-right: 1px solid #b1b3b9;
   margin-top: 0px;
   height: calc(100vh - 40px);
   width: 240px;

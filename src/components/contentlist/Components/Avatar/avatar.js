@@ -47,25 +47,25 @@ class MyAvatar extends React.Component
            <h1 className = "row"><b>Svg Icons</b></h1>
 
                    <div className = "avatar-display">
-                       <Avatar style={{backgroundColor: '#8abc89'}}>
+                       <Avatar style={{backgroundColor: '#E8A5E5'}}>
                            <FolderIcon/>
                        </Avatar>
-                       <Avatar style={{backgroundColor: '#e91e63'}}>
+                       <Avatar style={{backgroundColor: '#CAE561'}}>
                            <ThreeDRotationIcon/>
                        </Avatar>
-                       <Avatar style={{backgroundColor: '#4caf50'}}>
+                       <Avatar style={{backgroundColor: '#5CE8AB'}}>
                           <DeleteOutlinedIcon/>
                        </Avatar>
-                       <Avatar style={{backgroundColor: '#AE13E6'}}>
+                       <Avatar style={{backgroundColor: '#67A9EC'}}>
                           <ShoppingCartIcon/>
                        </Avatar>
-                       <Avatar style={{backgroundColor: '#F01F6C'}}>
+                       <Avatar style={{backgroundColor: '#EC67D6'}}>
                           <MailIcon/>
                        </Avatar>
-                       <Avatar style={{backgroundColor: '#F06C1F'}}>
+                       <Avatar style={{backgroundColor: '#F4A658'}}>
                           <DoneIcon/>
                        </Avatar>
-                       <Avatar style={{backgroundColor: '#16A177'}}>
+                       <Avatar style={{backgroundColor: '#BE7DE9'}}>
                           <FaceIcon/>
                        </Avatar>
 
@@ -75,13 +75,13 @@ class MyAvatar extends React.Component
            <h1 className = "row"><b>Letters</b></h1>
 
                    <div className = "avatar-display">
-                       <Avatar style={{backgroundColor: '#457ab2'}}>R</Avatar>
-                       <Avatar style={{backgroundColor: '#ff5722'}}>U</Avatar>
-                       <Avatar style={{backgroundColor: '#673ab7'}}>I</Avatar>
-                       <Avatar style={{backgroundColor: '#1B61ED'}}>Y</Avatar>
-                       <Avatar style={{backgroundColor: '#f572a2'}}>A</Avatar>
-                       <Avatar style={{backgroundColor: '#a43ab7'}}>N</Avatar>
-                       <Avatar style={{backgroundColor: '#38E265'}}>G</Avatar>
+                       <Avatar style={{backgroundColor: '#20b24a'}}>S</Avatar>
+                       <Avatar style={{backgroundColor: '#46ffda'}}>U</Avatar>
+                       <Avatar style={{backgroundColor: '#8c77b7'}}>P</Avatar>
+                       <Avatar style={{backgroundColor: '#8CAAEF'}}>E</Avatar>
+                       <Avatar style={{backgroundColor: '#f572a2'}}>R</Avatar>
+                       <Avatar style={{backgroundColor: '#d3f440'}}>H</Avatar>
+                       <Avatar style={{backgroundColor: '#e280cd'}}>A</Avatar>
                    </div>
 
        </div>

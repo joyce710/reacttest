@@ -12,7 +12,8 @@ const styles = theme =>({
     flexGrow: 1,
   },
   progress: {
-    padding: theme.spacing.unit * 5,
+    padding: theme.spacing.unit * 0.5,
+    margin:theme.spacing.unit * 7,
   },
 });
 
@@ -25,6 +26,7 @@ function MyProgress(props) {
     <LinearProgress className={classes.progress} color="secondary" />
     <LinearProgress className={classes.progress}/>
     <LinearProgress className={classes.progress} color="secondary" />
+
   </div>
   );
   let myName = "Progress";

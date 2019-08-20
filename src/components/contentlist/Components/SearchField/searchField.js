@@ -6,7 +6,6 @@ import InputBase from '@material-ui/core/InputBase';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
-
 import MyTemplete  from '../../../templete/index.js';
 import CodeBlock from '../../../CodeBlock.js';
 import ReactMarkdown from 'react-markdown';
@@ -35,7 +34,7 @@ const styles = {
   },
   divider: {
     width: 1,
-    height: "40px",
+    height: "35px",
     marginLeft: 4,
     marginRight: 4,
   },
@@ -47,7 +46,7 @@ function MySearchField(props) {
   let output = (
     <Paper className={classes.root} elevation={20}>
       <IconButton className={classes.iconButton} aria-label="Menu">
-        <Avatar style={{backgroundColor: '#3E5EE1'}}>G</Avatar>
+        <Avatar style={{backgroundColor: '#83a8e1'}}>G</Avatar>
       </IconButton>
       <InputBase className={classes.input} placeholder="Search Google" />
       <IconButton className={classes.iconButton} aria-label="Search">

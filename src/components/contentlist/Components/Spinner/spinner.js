@@ -15,14 +15,22 @@ const styles = theme => ({
 
 function MySpinner(props) {
   const { classes } = props;
-  let output = (<div className={classes.root}>
+  let output = (
+
+      <div className={classes.root}>
     <CircularProgress className={classes.progress} />
     <CircularProgress className={classes.progress} color="secondary" />
     <CircularProgress className={classes.progress} />
     <CircularProgress className={classes.progress} color="secondary" />
     <CircularProgress className={classes.progress} />
     <CircularProgress className={classes.progress} color="secondary" />
+        <div>
+          <CircularProgress className={classes.progress} />
+          <CircularProgress className={classes.progress} color="secondary" />
+        </div>
   </div>
+
+
 );
   let myName = "Spinner";
 

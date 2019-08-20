@@ -9,18 +9,17 @@ import Collapse from '@material-ui/core/Collapse';
 import FolderIcon from '@material-ui/icons/Folder';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
-
 import MyTemplete  from '../../../templete/index.js';
 import CodeBlock from '../../../CodeBlock.js';
 import ReactMarkdown from 'react-markdown';
-import Avatar from '@material-ui/core/Avatar';
-
+import DraftsIcon from '@material-ui/icons/Drafts';
+import Divider from '@material-ui/core/Divider';
 const styles = theme => ({
   root: {
     width: '100%',
     maxWidth: "400px",
     margin: "auto",
-    backgroundColor: "#F4DBDB",
+    backgroundColor: "#cee5f4",
     justifyContent: "Center",
     marginTop: "50px",
     marginBottom: "50px",
@@ -56,15 +55,17 @@ class MyNestedList extends React.Component {
           </ListItemIcon>
           <ListItemText inset primary="File 1" />
         </ListItem>
+        <Divider variant="inset" component="li" />
         <ListItem button>
           <ListItemIcon>
             <FolderIcon />
           </ListItemIcon>
           <ListItemText inset primary="File 2" />
         </ListItem>
+        <Divider variant="inset" component="li" />
         <ListItem button onClick={this.handleClick}>
           <ListItemIcon>
-            <Avatar><FolderIcon /></Avatar>
+            <DraftsIcon />
           </ListItemIcon>
           <ListItemText inset primary="Folder 1" />
           {this.state.open ? <ExpandLess /> : <ExpandMore />}
@@ -75,6 +76,7 @@ class MyNestedList extends React.Component {
               <ListItemIcon>
                 <FolderIcon />
               </ListItemIcon>
+              <Divider />
               <ListItemText inset primary="File 3" />
             </ListItem>
             <ListItem button className={classes.nested}>

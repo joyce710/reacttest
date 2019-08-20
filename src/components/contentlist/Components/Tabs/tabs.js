@@ -12,7 +12,7 @@ import ReactMarkdown from 'react-markdown';
 
 function TabContainer(props) {
   return (
-    <Typography component="div" style={{ padding: 8 * 3 }}>
+    <Typography component="div" style={{ padding: 8 * 2 }}>
       {props.children}
     </Typography>
   );
@@ -26,6 +26,7 @@ const styles = theme => ({
   root: {
     backgroundColor: theme.palette.background.paper,
     margin: theme.spacing.unit * 3,
+    fontSize: 14
   },
 });
 
@@ -62,7 +63,7 @@ class MyTabs extends React.Component {
     Known as the modern garden rose of today, there were once four varieties of this type of rose. They were brought into the United States in the 18th and 19th centuries by people from eastern Asia and China. The ones brought in at that time flowered several times a year, including throughout the entire summer and into the fall.
     `;
     return(
-      <div className={classes.root}>
+      <div className={classes.root}><br/>
       <h1 className = "tab-title"><b>Summary of 5 Classic Types of Rose</b></h1>
       <AppBar position="static">
         <Tabs value={value} onChange={this.handleChange}>

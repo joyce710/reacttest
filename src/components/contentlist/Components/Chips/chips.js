@@ -18,19 +18,19 @@ const styles = theme => ({
   },
   chip1: {
     margin: theme.spacing.unit,
-    backgroundColor: "#CDDC39"
+    backgroundColor: "#dcd734"
   },
   chip2: {
     margin: theme.spacing.unit,
-    backgroundColor: "#119D4D"
+    backgroundColor: "#46ffda"
   },
   chip3: {
     margin: theme.spacing.unit,
-    backgroundColor: "#E820E8"
+    backgroundColor: "#e8a4b5"
   },
   chip4: {
     margin: theme.spacing.unit,
-    backgroundColor: "#6BBAEF"
+    backgroundColor: "#91efef"
   },
   chip: {
     margin: theme.spacing.unit
