@@ -12,7 +12,7 @@ import Header  from './header';
 import {connect} from 'react-redux';
 import LeftBarAction from '../redux/actions/leftBarAction.js'
 import MyColor from '../components/contentlist/Colors/colors.js';
-// import MyIconography from '../components/contentlist/Iconography/iconograpy.js';
+import MyIconography from '../components/contentlist/Iconography/iconograpy1.js';
  import MyHome from '../components/contentlist/Home/home.js';
 // import Error from '../components/contentlist/Error/error.js';
 import Footer from './footer/footer.js';
@@ -61,7 +61,7 @@ class App extends React.Component{
                         <Route path = "/" component = {MyHome}  key = "/home" exact/>
                         <Route path = "/my-app" component = {MyHome} key = "/my-app" exact/>
                         <Route path = "/colors" component = {MyColor} key = "/colors"/>
-                        {/*<Route path = "/icons" component = {MyIconography} key = "/icons"/>*/}
+                        <Route path = "/icons" component = {MyIconography} key = "/icons"/>
                         <Route path = "/components/button" component = {MyButtons} key = "/components/button"/>
                         <Route path = "/components/table" component = {MyTables} key = "/components/table"/>
                         <Route path = "/components/tabs" component = {MyTabs} key = "/components/tabs"/>

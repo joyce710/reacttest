@@ -220,11 +220,12 @@ iframe {
 .dialog-button {
   padding-top: 50px;
   padding-bottom: 50px;
+  margin-bottom: 500px;
 }
 .dialog-button button {
   border: 1px solid rgba(63,81,181,0.5);
-  background-color: #a52a2a;
-  color: #fff;
+  background-color: #91efef;
+  color: #868686;
 }
 .display-left {
   text-align: right;
@@ -271,21 +272,30 @@ iframe {
   padding-bottom: 20px;
   text-align: left;
 }
-.paper {
-  background-color: #eaedf7 !important;
+.icon-paper {
+  background-color: #f1fdff !important;
   text-align: center !important;
-  overflow: auto !important;
 }
-.paper header {
-  width: 100% !important;
+.icons-display {
+  flex-flow: wrap;
+  display: flex;
 }
-.templete-appbar {
-  background-color: #868686 !important;
-  overflow: auto !important;
+.icon-title {
+  color: #dcd734;
+  font-weight: 900;
+  padding-top: 30px;
 }
-.tab-content {
-  text-align: center;
-  overflow: auto !important;
+.one-icon-display {
+  display: flex;
+  cursor: pointer;
+  margin: 30px;
+}
+.one-icon-display svg {
+  width: 40px;
+  height: 40px;
+}
+.Tabs {
+  background-color: #eaedf7 !important;
 }
 .footer {
   border-top: 1px solid #e6ecf2;
