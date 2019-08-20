@@ -214,13 +214,14 @@ iframe {
   justify-content: space-around;
   align-items: center;
   height: 60px;
-  border-top: 1px solid #a52a2a;
-  border-bottom: 1px solid #a52a2a;
+  border-top: 1px solid #e8bdc7;
+  border-bottom: 1px solid #e8bdc7;
 }
 .dialog-button {
   padding-top: 50px;
   padding-bottom: 50px;
   margin-bottom: 500px;
+  position: center;
 }
 .dialog-button button {
   border: 1px solid rgba(63,81,181,0.5);
@@ -249,7 +250,7 @@ iframe {
 }
 .tab-title {
   padding-bottom: 20px;
-  color: #17324d false;
+  color: #cee5f4 false;
 }
 .tab-content {
   font-size: 20px;
@@ -271,9 +272,10 @@ iframe {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: left;
+  font-size: 15px;
 }
 .icon-paper {
-  background-color: #f1fdff !important;
+  background-color: #fbfbfb !important;
   text-align: center !important;
 }
 .icons-display {
@@ -281,7 +283,7 @@ iframe {
   display: flex;
 }
 .icon-title {
-  color: #dcd734;
+  color: #e8a4b5;
   font-weight: 900;
   padding-top: 30px;
 }
@@ -294,8 +296,23 @@ iframe {
   width: 40px;
   height: 40px;
 }
-.Tabs {
+.paper {
   background-color: #eaedf7 !important;
+  text-align: center !important;
+  overflow: auto !important;
+}
+.paper header {
+  width: 100% !important;
+}
+.templete-appbar {
+  background-color: #a2c3de !important;
+  overflow: auto !important;
+  font-size: 20px;
+}
+.tab-content {
+  text-align: center;
+  overflow: auto !important;
+  font-size: 15px;
 }
 .footer {
   border-top: 1px solid #e6ecf2;

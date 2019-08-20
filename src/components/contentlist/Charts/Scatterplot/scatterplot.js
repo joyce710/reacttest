@@ -32,7 +32,7 @@ class MyScatterplot extends Component
     ];
     return (
       <div className = "scatterplot-display">
-        <XYPlot margin={{Bottom: 20, top: 30}} height={700} width= {700}>
+        <XYPlot margin={{Bottom: 20, top: 30}} height={500} width= {500}>
           <VerticalGridLines />
           <HorizontalGridLines />
           <XAxis />

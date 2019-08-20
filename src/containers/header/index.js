@@ -64,7 +64,7 @@ class Header extends React.Component{
                             <NavLink to="/"><Avatar src = {HomeIcon} /></NavLink>
                         </div>
                         <Typography variant="h6" className = "grow">
-                            <span className = "titleColor">Design Reference43</span>
+                            <span className = "titleColor">Design Reference</span>
                         </Typography>
                         <div className = "rightMenuButton">
                             <IconButton aria-label="More" aria-haspopup="true" onClick={this.handleClick}>

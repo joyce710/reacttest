@@ -15,7 +15,10 @@ class MyStackedBar extends Component
       {x: 'Banana', y: 10},
       {x: 'Orange', y: 5},
       {x: 'peach', y: 8},
-      {x: 'Lime', y: 15}
+      {x: 'Lime', y: 15},
+      {x: 'blueberry', y: 3},
+      {x: 'cherry', y: 13},
+      {x: 'strawberry', y: 6}
     ];
 
     const data2 = [
@@ -23,20 +26,27 @@ class MyStackedBar extends Component
       {x: 'Banana', y: 20},
       {x: 'Orange', y: 10},
       {x: 'peach', y: 20},
-      {x: 'Lime', y: 5}
+      {x: 'Lime', y: 5},
+      {x: 'blueberry', y: 9},
+      {x: 'cherry', y: 5},
+      {x: 'strawberry', y: 20}
     ];
 
     const data3 = [
       {x: 'Apple', y: 20},
-      {x: 'Banana', y: 10},
+      {x: 'Banana', y: 16},
       {x: 'Orange', y: 10},
       {x: 'peach', y: 12},
-      {x: 'Lime', y: 5}
+      {x: 'Lime', y: 5},
+      {x: 'blueberry', y: 14},
+      {x: 'cherry', y: 8},
+      {x: 'strawberry', y: 17}
+
     ];
 
     return (
       <div className = "stack-display">
-        <XYPlot margin={{Bottom: 70, top: 30}} xType="ordinal" width={700} height={700} stackBy="y" yDomain={[0, 50]}>
+        <XYPlot margin={{Bottom: 70, top: 30}} xType="ordinal" width={500} height={600} stackBy="y" yDomain={[0, 50]}>
           <VerticalGridLines />
           <HorizontalGridLines />
           <XAxis  />

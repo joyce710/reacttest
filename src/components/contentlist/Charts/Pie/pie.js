@@ -13,13 +13,14 @@ class MyPie extends Component
     {angle: 1, label: 'Others'},
     {angle: 2, label: 'Nissan'},
     {angle: 3, label: 'GMC'},
-    {angle: 4, label: 'Honda'},
+    {angle: 2.5, label: 'Honda'},
     {angle: 5, label: 'Ford'},
-    {angle: 6, label: 'Toyota'}
+    {angle: 3.76, label: 'Toyota'},
+    {angle: 2.76, label: 'BMW'}
   ]
     return (
       <div className = "pie-display">
-        <RadialChart data={myData} width={500} height={600} showLabels/>
+        <RadialChart data={myData} width={400} height={400} showLabels/>
       </div>
     );
   }

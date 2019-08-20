@@ -26,7 +26,7 @@ class MyHorizontalBar extends Component
 
     return (
       <div className = "bar-display">
-        <XYPlot margin={{left: 70, top: 20}} yType="ordinal" width={700} height={700} xDomain={[0, 26]}>
+        <XYPlot margin={{left: 70, top: 20}} yType="ordinal" width={500} height={500} xDomain={[0, 26]}>
           <VerticalGridLines />
           <HorizontalGridLines />
           <XAxis  />

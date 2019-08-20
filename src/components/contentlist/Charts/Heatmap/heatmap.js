@@ -14,26 +14,26 @@ class MyHeatmap extends Component
   {
     const {value} = this.state;
     const data = [
-      {x: 1, y: 0, color: 11},
-      {x: 1, y: 5, color: 15},
-      {x: 1, y: 10, color: 6},
-      {x: 1, y: 15, color: 7},
-      {x: 1, y: 20, color: 3},
-      {x: 2, y: 0, color: 12},
-      {x: 2, y: 5, color: 2},
-      {x: 2, y: 10, color: 1},
-      {x: 2, y: 15, color: 5},
-      {x: 2, y: 20, color: 7},
-      {x: 3, y: 0, color: 4},
-      {x: 3, y: 5, color: 2},
-      {x: 3, y: 10, color: 6},
-      {x: 3, y: 15, color: 3},
-      {x: 3, y: 20, color: 12}
+      {x: 1, y: 0, color: 1},
+      {x: 1, y: 5, color: 12},
+      {x: 1, y: 10, color: 3},
+      {x: 1, y: 15, color: 14},
+      {x: 1, y: 20, color: 5},
+      {x: 2, y: 0, color: 16},
+      {x: 2, y: 5, color: 7},
+      {x: 2, y: 10, color: 10},
+      {x: 2, y: 15, color: 9},
+      {x: 2, y: 20, color: 10},
+      {x: 3, y: 0, color: 2},
+      {x: 3, y: 5, color: 13},
+      {x: 3, y: 10, color: 4},
+      {x: 3, y: 15, color: 15},
+      {x: 3, y: 20, color: 2}
     ];
 
     return (
       <div className = "circular-display">
-      <XYPlot width={700} height={700} margin={{Bottom: 20, top: 35}}>
+      <XYPlot width={500} height={500} margin={{Bottom: 20, top: 35}}>
       <XAxis />
       <YAxis />
       <HeatmapSeries

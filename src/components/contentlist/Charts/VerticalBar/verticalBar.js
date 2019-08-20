@@ -10,16 +10,22 @@ class MyVerticalBar extends Component
   renderBar()
   {
     const data1 = [
-      {x: 'Apple', y: 27},
-      {x: 'Banana', y: 12},
+      {x: 'blueberry', y: 14},
+      {x: 'cherry', y: 8},
+      {x: 'strawberry', y: 17},
+      {x: 'Apple', y: 12},
+      {x: 'Banana', y: 11},
       {x: 'Orange', y: 19},
       {x: 'Peach', y: 9},
-      {x: 'Lime', y: 22}
+      {x: 'Lime', y: 15}
     ];
 
     const data2 = [
+      {x: 'blueberry', y: 9},
+      {x: 'cherry', y: 12},
+      {x: 'strawberry', y: 10},
       {x: 'Apple', y: 20},
-      {x: 'Banana', y: 23},
+      {x: 'Banana', y: 18},
       {x: 'Orange', y: 6},
       {x: 'Peach', y: 15},
       {x: 'Lime', y: 19}
@@ -27,7 +33,7 @@ class MyVerticalBar extends Component
 
     return (
       <div className = "bar-display">
-        <XYPlot margin={{left: 70, top: 20}} xType="ordinal" width={700} height={700} yDomain={[0, 30]}>
+        <XYPlot margin={{left: 70, top: 20}} xType="ordinal" width={500} height={500} yDomain={[0, 30]}>
           <VerticalGridLines />
           <HorizontalGridLines />
           <XAxis  />
