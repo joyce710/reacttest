@@ -7,15 +7,13 @@ import React  from 'react';
 import { Route, Switch, HashRouter} from 'react-router-dom';
 import "../../node_modules/react-vis/dist/style.css";
 import Header  from './header';
-// import LeftBarReducer from '../redux/reducer/leftBarReducer.js'
-
+import Footer from './footer/footer.js';
 import {connect} from 'react-redux';
 import LeftBarAction from '../redux/actions/leftBarAction.js'
 import MyColor from '../components/contentlist/Colors/colors.js';
 import MyIconography from '../components/contentlist/Iconography/iconograpy1.js';
  import MyHome from '../components/contentlist/Home/home.js';
 // import Error from '../components/contentlist/Error/error.js';
-import Footer from './footer/footer.js';
 import MyButtons from '../components/contentlist/Components/Buttons/buttons.js';
 import MyTables from '../components/contentlist/Components/Tables/tables.js';
 import MyTabs from '../components/contentlist/Components/Tabs/tabs.js';
