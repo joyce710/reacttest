@@ -13,7 +13,7 @@ import SideBarAction from '../../redux/actions/sideBarAction.js';
 
 class DynamicSideBar extends React.Component
 {
-    openSubList=(oneState,bool)=>{
+    openSubList(oneState,bool){
         this.props.showSublist(oneState,bool);
     }
     resetTabView = () =>{
@@ -31,7 +31,7 @@ class DynamicSideBar extends React.Component
 
             return (
                 <div key={item.label}>
-                    <ListItem button onClick={this.openSubList(item.label, expand)}>
+                    <ListItem button onClick={()=>{this.openSubList(item.label, expand)}}>
                         <ListItemIcon>
                             <MyIcon/>
                         </ListItemIcon>

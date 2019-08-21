@@ -41,14 +41,7 @@ const sideBarReducer = (state = initState, action) =>{
             }
         }
     }
-    // else if(action.type === Action.SWITCH_TABS)
-    // {
-    //     return{
-    //         ...state,
-    //         value: action.value,
-    //         event: action.event
-    //     }
-    // }
+
     else if(action.type === Action.RESET_TABS_VALUE)
     {
         return{

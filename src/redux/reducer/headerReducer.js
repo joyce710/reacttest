@@ -22,8 +22,6 @@ const headerReducer = (state = initState, action) => {
         return{
             ...state,
             // anchorEl这个值变成icoButton这个tag后，就会让menu里的东西在icobutton里显示
-            // 让refers to the element whose event listener triggered the event, posed to the
-            //
             anchorEl: action.event.currentTarget
         }
     }
